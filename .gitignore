@@ -16,13 +16,15 @@ build/
 runs/
 wandb/
 
-# 大型数据集文件（可选择性忽略）
-# Dataset_Original/
-# Dataset_resplit/
-# Dataset_resplit_aug/
-# fresh-and-rotten-fruits-3/
+# 大型数据集文件 - 从仓库中排除，提供下载链接
+Dataset_Original/
+Dataset_resplit/
+fresh-and-rotten-fruits-3/
+# 增强数据集只保留配置，图片通过网盘分享
+Dataset_resplit_aug/images/
+Dataset_resplit_aug/labels/
 
-# 预训练模型（可选择性忽略）
+# 预训练模型
 *.pt
 *.pth
 *.weights

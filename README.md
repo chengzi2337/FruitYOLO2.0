@@ -34,9 +34,46 @@
 
 ---
 
+## � 数据集下载
+
+**重要**：由于数据集文件较大（~1.3GB），未包含在本仓库中。
+
+### 下载链接
+- **增强数据集**（推荐使用）：[待上传 - 请提供网盘链接]
+  - 包含 5,886 张训练图像 + 数据增强
+  - 362 张验证图像
+  - 382 张测试图像
+
+### 数据集结构
+下载后解压至项目根目录，应有以下结构：
+```
+FruitYOLO2.0/
+├── Dataset_resplit_aug/
+│   ├── data.yaml
+│   ├── classes.txt
+│   ├── images/
+│   │   ├── train/  (5886张)
+│   │   ├── val/    (362张)
+│   │   └── test/   (382张)
+│   └── labels/
+│       ├── train/
+│       ├── val/
+│       └── test/
+```
+
+---
+
 ## 🚀 快速开始
 
-### 1. 安装依赖
+### 1. 克隆仓库并下载数据集
+
+```bash
+git clone https://github.com/yourusername/FruitYOLO2.0.git
+cd FruitYOLO2.0
+# 下载并解压数据集到当前目录
+```
+
+### 2. 安装依赖
 
 ```powershell
 # 创建 conda 环境
@@ -48,7 +85,7 @@ conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install ultralytics
 ```
 
-### 2. 开始训练
+### 3. 开始训练
 
 使用**推荐配置**（带早停机制的训练脚本）：
 
