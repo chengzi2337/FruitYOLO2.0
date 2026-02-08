@@ -1,0 +1,28 @@
+# 训练集和验证集的路径 (使用相对路径 ./)
+train: ./Dataset_Original/images/train
+# 原始项目已有训练/验证集，重映射数据作为测试集
+val: ./Dataset_Original/images/val
+test: ./Dataset_Original/images/val
+
+# 类别数量 (共16类)
+nc: 16
+
+# 类别名称列表 (必须与 classes.txt 里的顺序完全一致)
+names: [
+  'Apple_healthy',
+  'Apple_rotten',
+  'Banana_healthy',
+  'Banana_rotten',
+  'Beans_healthy',
+  'Beans_rotten',
+  'Grape_healthy',
+  'Grape_rotten',
+  'Mango_healthy',
+  'Mango_rotten',
+  'Orange_healthy',
+  'Orange_rotten',
+  'Potato_healthy',
+  'Potato_rotten',
+  'Tomato_healthy',
+  'Tomato_rotten'
+]

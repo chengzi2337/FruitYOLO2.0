@@ -1,0 +1,10 @@
+# Re-split dataset configuration
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes
+nc: 16
+
+# Class names
+names: ['Apple_healthy', 'Apple_rotten', 'Banana_healthy', 'Banana_rotten', 'Beans_healthy', 'Beans_rotten', 'Grape_healthy', 'Grape_rotten', 'Mango_healthy', 'Mango_rotten', 'Orange_healthy', 'Orange_rotten', 'Potato_healthy', 'Potato_rotten', 'Tomato_healthy', 'Tomato_rotten']

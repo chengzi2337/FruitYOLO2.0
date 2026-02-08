@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# YOLOv8 训练输出
+runs/
+wandb/
+
+# 大型数据集文件（可选择性忽略）
+# Dataset_Original/
+# Dataset_resplit/
+# Dataset_resplit_aug/
+# fresh-and-rotten-fruits-3/
+
+# 预训练模型（可选择性忽略）
+*.pt
+*.pth
+*.weights
+!best.pt
+
+# 缓存文件
+*.cache
+*.npy
+labels.cache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+*.txt.log
+
+# 临时文件
+*.tmp
+*.bak
+*.backup

@@ -1,0 +1,20 @@
+path: .
+train: fresh-and-rotten-fruits-3/test/images
+val: fresh-and-rotten-fruits-3/test/images
+names:
+  - apple_healthy
+  - banana_healthy
+  - orange_healthy
+  - banana_rotten
+  - orange_rotten
+  - apple_rotten
+  - class6
+  - class7
+  - class8
+  - class9
+  - class10
+  - class11
+  - class12
+  - class13
+  - class14
+  - class15

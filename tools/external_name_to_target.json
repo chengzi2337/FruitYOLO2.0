@@ -1,0 +1,8 @@
+{
+  "apple": "Apple_healthy",
+  "banana": "Banana_healthy",
+  "orange": "Orange_healthy",
+  "banana_rotten": "Banana_rotten",
+  "orange_rotten": "Orange_rotten",
+  "apple_rotten": "Apple_rotten"
+}
