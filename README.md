@@ -249,4 +249,48 @@ python tools/check_label_indices.py
 3. ✅ 使用更大的模型（yolov8m.pt）
 4. ✅ 调整学习率和增强参数
 
+---
+
+## 📊 训练结果与模型下载
+
+本项目已提供训练好的高精度模型（YOLOv8s），基于增强数据集训练。
+
+### 🏷️ 模型文件 (PyTorch & Checkpoint)
+
+| 文件名 | 格式 | 描述 | 下载链接 |
+| :--- | :--- | :--- | :--- |
+| `best.pt` | PyTorch | 最佳权重 (mAP=99.2%) | [下载](runs/detect/resplit_train_gpu_patience3/weights/best.pt) |
+| `last.pt` | PyTorch | 最终权重 | [下载](runs/detect/resplit_train_gpu_patience3/weights/last.pt) |
+| `best.ckpt` | Generic | PyTorch Lightning / 通用检查点 | [下载](runs/detect/resplit_train_gpu_patience3/weights/best.ckpt) |
+| `last.ckpt` | Generic | 通用检查点 | [下载](runs/detect/resplit_train_gpu_patience3/weights/last.ckpt) |
+
+> **注意**: `.ckpt` 文件使用 `torch.save(model, ..., weights_only=False)` 导出，包含完整的模型结构。
+
+### 📈 训练指标
+
+所有训练日志和图表均保存在 `runs/detect/resplit_train_gpu_patience3/` 目录下。
+
+#### 核心指标可视化
+| 混淆矩阵 | 结果概览 |
+| :---: | :---: |
+| ![Confusion Matrix](runs/detect/resplit_train_gpu_patience3/confusion_matrix.png) | ![Results](runs/detect/resplit_train_gpu_patience3/results.png) |
+
+#### 验证批次示例
+| 标签 | 预测 |
+| :---: | :---: |
+| ![Val Labels](runs/detect/resplit_train_gpu_patience3/val_batch0_labels.jpg) | ![Val Pred](runs/detect/resplit_train_gpu_patience3/val_batch0_pred.jpg) |
+
+### 📂 目录结构说明
+
+```text
+runs/detect/resplit_train_gpu_patience3/
+├── args.yaml               # 训练参数配置
+├── results.csv             # 详细训练指标数据
+├── weights/                # 模型权重文件
+│   ├── best.pt
+│   ├── best.ckpt
+│   └── ...
+└── *.{png,jpg}             # 各类评估图表
+```
+
 
